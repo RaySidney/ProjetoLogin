@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* 
+    Paleta de Cores 
+    Verde:#00D615
+    Azul:#2F7ADE
+*/
+:root{
+    --Verde: #00D615;
+    --Azul: #2F7ADE;
+}
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: var(--Azul);
+    height: 100vh;
+    width: 100vw;
+}   
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    height: 520px;
+    width: 250px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+section#login > div#imagem{
+    display: block;
+    background: #2F7ADE url(../imagens/fundo.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+
+}
+section#login > div#formulario{
+    height: 300px;
+    text-align: justify;
+    display: inline-block;
+    padding: 10px;
+}
+section#login > div#formulario > h1{
+    text-align: center;
+}
+form{
+    margin: 5px;
+    width: 220px;
+}
+.linha{
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+    background-color: blueviolet;
+    width: 220px;
+}
+.textbox{
+    width: 170px;
+    border-radius: 5px;
+}
+input[type=email]:focus, input[type=password]:focus {
+    background-color: lightblue;
+  }
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 1px;
+    margin: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    width:220px; 
+    height: 35px;
+  }
+
+#butaoenviar:hover{
+    background-color: #36da9e;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+#butaorecuperar{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: #04AA6D
+}
+#butaorecuperar:hover{
+    background-color: gray;
+    color: white;
+}
+input#iemail.textbox, input#isenha.textbox{
+    border: 1px solid blueviolet;
+    width: 210px;
+    padding: 5px;
+    
+}
