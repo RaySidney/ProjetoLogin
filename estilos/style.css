@@ -36,6 +36,8 @@ section#login{
     border-radius: 20px;
     margin: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
 }
 section#login > div#imagem{
     background: #2F7ADE url(../imagens/fundo.jpg) no-repeat;
@@ -44,28 +46,31 @@ section#login > div#imagem{
 
 }
 section#login > div#formulario{
-    height: 300px;
     text-align: justify;
-    padding: 10px;
+    margin: 10px;
+    
 }
 section#login > div#formulario > h1{
     text-align: center;
+    font-size: 1em;
+}
+section#login > div#formulario p{
+    text-align: center;
+    font-size: 0.8em;
 }
 form{
-    margin: 5px;
-    width: 220px;
+    text-align: center;
+    width: 80%;
 }
 .linha{
     border: 1px solid blueviolet;
     border-radius: 5px;
     text-align: center;
-    margin: auto;
     margin-bottom: 5px;
     background-color: blueviolet;
-    width: 220px;
+    width: 120%;
 }
 .textbox{
-    width: 170px;
     border-radius: 5px;
 }
 input[type=email]:focus, input[type=password]:focus {
@@ -81,7 +86,6 @@ input[type=button], input[type=submit], input[type=reset] {
     margin: 2px;
     text-decoration: none;
     cursor: pointer;
-    width:220px; 
     height: 35px;
   }
 
@@ -93,17 +97,22 @@ input[type=button], input[type=submit], input[type=reset] {
 #butaorecuperar{
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.5);
-    color: #04AA6D
+    color: #04AA6D;
+    width: 123%;
 }
 #butaorecuperar:hover{
     background-color: gray;
     color: white;
 }
+
 input#iemail.textbox, input#isenha.textbox{
     border: 1px solid blueviolet;
-    width: 210px;
     padding: 5px;
-    
+    width: 100%;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    width: 120%;
 }
 
 @media only screen and (min-width: 481px) {
@@ -111,28 +120,35 @@ input#iemail.textbox, input#isenha.textbox{
         font-size: 1em;
     }
     section#login{
-        width: 90vw;
-        height: 55vh;
+        display: flex;
+        width: 90%;
+        height: 60%;
     }
     section#login >div#formulario{
-        width: 50vw;
-        height: 55vh;
-        transform: translate(0%, -100%)
+        width: 70%;
+        height: 100%;
+        
     }
     section#login > div#imagem{ 
-        width: 50vw;
-        height: 55vh;
-        transform: translate(100%, 0%);
+        width: 45%;
+        height: 100%;
+        background: url(/imagens/fundo.jpg) no-repeat center;
+        background-size: cover;
         
     }
     .linha{
-        width: 45vw;
+        width: 123%;
+        margin: 4px;
+        padding: 5px;
     }
     input#iemail.textbox, input#isenha.textbox{
-        width: 44vw;
+        width: 100%;
     }
 
     input[type=button], input[type=submit], input[type=reset] {
-        width: 45vw;
+        width: 123%;
+    }
+    p{
+        margin: 5px;
     }
 }
