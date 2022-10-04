@@ -161,7 +161,6 @@ input[type=button], input[type=submit], input[type=reset] {
     section#login > div#imagem{ 
         width: 45%;
         height: 100%;
-        background: url(/imagens/fundo.jpg) no-repeat center;
         background-size: cover;
         
     }
@@ -182,5 +181,36 @@ input[type=button], input[type=submit], input[type=reset] {
         width: 100%;
     }
 }
-
+@media only screen and (max-height: 350px) {
+    section#login{
+        height: 95%;
+    }
+    section#login >div#formulario{
+        height: 100%;
+    }
+    form{
+        display: grid;
+        width: 87%;
+    }
+    #butaoenviar{
+        width: 17vw;
+        height: 25px;
+        grid-row: 3;
+        grid-column: 1;
+    }
+    #butaorecuperar{
+        grid-row: 3;
+        grid-column: 2;
+        width: 17vw;
+        height: 25px;
+    }
+    #linha1{
+        grid-row: 1;
+        width: 160%;
+    }
+    #linha2{
+        grid-row: 2;
+        width: 160%;
+    }
+}
 
