@@ -98,7 +98,7 @@ input[type=button], input[type=submit], input[type=reset] {
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.5);
     color: #04AA6D;
-    width: 123%;
+    width: 120%;
 }
 #butaorecuperar:hover{
     background-color: gray;
@@ -150,5 +150,8 @@ input[type=button], input[type=submit], input[type=reset] {
     }
     p{
         margin: 5px;
+    }
+    #butaorecuperar{
+        width: 123%;
     }
 }
